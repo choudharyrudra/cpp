@@ -223,9 +223,11 @@ int main(int, char**)
         ImGui::NewFrame();
 
         ImGui::SetNextWindowSize(ImVec2(400, 300));
+        ImGui::SetNextWindowPos(ImVec2(0, 0));
         ImGui::Begin("My new ImGui App" , &open, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoTitleBar);
 
         ImGui::SetCursorPosX(ImGui::GetWindowSize().x / 2.0f - ImGui::CalcTextSize("Hello, world!").x / 2.0f);
+        ImGui::SetCursorPosY(ImGui::GetWindowSize().y / 2.0f - ImGui::GetTextLineHeight() / 2.0f);
         ImGui::Text("Hello, world!");
 
 
