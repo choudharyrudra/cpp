@@ -192,6 +192,7 @@ int main(int, char**)
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
     // Main loop
+    bool checkboxvalue = true;
     bool done = false;
     bool open = true;
     while (!done)
@@ -236,6 +237,7 @@ int main(int, char**)
             done = true;
 
         }
+        ImGui::Checkbox("Remember me", &checkboxvalue);
 
 
 
