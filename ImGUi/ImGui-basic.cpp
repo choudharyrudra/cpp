@@ -230,6 +230,14 @@ int main(int, char**)
         ImGui::SetCursorPosY(ImGui::GetWindowSize().y / 2.0f - ImGui::GetTextLineHeight() / 2.0f);
         ImGui::Text("Hello, world!");
 
+        ImGui::SetCursorPosY(ImGui::GetWindowSize().y / 2.0f - 40.0f / 2.0f);
+        ImGui::SetCursorPosX(ImGui::GetWindowSize().x / 2.0f - 120.0f / 2.0f);
+        if (ImGui::Button("Close", ImVec2(50, 50))) {
+            done = true;
+
+        }
+
+
 
         ImGui::End();
 
