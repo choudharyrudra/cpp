@@ -222,7 +222,8 @@ int main(int, char**)
         ImGui_ImplWin32_NewFrame();
         ImGui::NewFrame();
 
-        ImGui::Begin("My new ImGui App" , &open, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize);
+        ImGui::SetNextWindowSize(ImVec2(400, 300), ImGuiCond_FirstUseEver);
+        ImGui::Begin("My new ImGui App" , &open, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoTitleBar);
 
 
         ImGui::End();
