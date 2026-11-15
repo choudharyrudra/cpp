@@ -239,6 +239,10 @@ int main(int, char**)
         }
         ImGui::Checkbox("Remember me", &checkboxvalue);
 
+        if (checkboxvalue) {
+            ImGui::Text("You have checked the checkbox!");
+        }
+
 
 
         ImGui::End();
