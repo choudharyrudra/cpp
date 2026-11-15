@@ -222,8 +222,10 @@ int main(int, char**)
         ImGui_ImplWin32_NewFrame();
         ImGui::NewFrame();
 
-        ImGui::SetNextWindowSize(ImVec2(400, 300), ImGuiCond_FirstUseEver);
+        ImGui::SetNextWindowSize(ImVec2(400, 300));
         ImGui::Begin("My new ImGui App" , &open, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoTitleBar);
+
+        ImGui::Text("Hello, world!");
 
 
         ImGui::End();
